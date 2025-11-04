@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <form action="#" id="pokemonForm">
+
+
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" required />
+
+        <label>Tipo(s):</label>
+        <div class="tipos">
+            <label><input type="checkbox" value="Normal"> Normal</label>
+            <label><input type="checkbox" value="Fuego"> Fuego</label>
+            <label><input type="checkbox" value="Agua"> Agua</label>
+            <label><input type="checkbox" value="Eléctrico"> Eléctrico</label>
+            <label><input type="checkbox" value="Planta"> Planta</label>
+            <label><input type="checkbox" value="Hielo"> Hielo</label>
+            <label><input type="checkbox" value="Lucha"> Lucha</label>
+            <label><input type="checkbox" value="Veneno"> Veneno</label>
+            <label><input type="checkbox" value="Tierra"> Tierra</label>
+            <label><input type="checkbox" value="Volador"> Volador</label>
+            <label><input type="checkbox" value="Psíquico"> Psíquico</label>
+            <label><input type="checkbox" value="Bicho"> Bicho</label>
+            <label><input type="checkbox" value="Roca"> Roca</label>
+            <label><input type="checkbox" value="Fantasma"> Fantasma</label>
+            <label><input type="checkbox" value="Dragón"> Dragón</label>
+            <label><input type="checkbox" value="Siniestro"> Siniestro</label>
+            <label><input type="checkbox" value="Acero"> Acero</label>
+            <label><input type="checkbox" value="Hada"> Hada</label>
+        </div>
+
+        <label for="nivel">Nivel:</label>
+        <input type="number" id="nivel" min="1" max="100" required />
+
+        <label for="region">Región:</label>
+        <select id="region" required>
+            <option value="">Selecciona una región</option>
+            <option value="Kanto">Kanto</option>
+            <option value="Johto">Johto</option>
+            <option value="Hoenn">Hoenn</option>
+            <option value="Sinnoh">Sinnoh</option>
+            <option value="Unova">Unova</option>
+            <option value="Kalos">Kalos</option>
+            <option value="Alola">Alola</option>
+            <option value="Galar">Galar</option>
+            <option value="Paldea">Paldea</option>
+        </select>
+
+        <button type="submit">Añadir Pokémon</button>
+
+        <div id="mensaje"></div>
+    </form>
+
+    </form>
+    <p class="message">No hay pokemons</p>
+    <ul id="list"></ul>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
